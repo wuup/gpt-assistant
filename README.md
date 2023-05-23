@@ -1,6 +1,14 @@
 # gpt-assistant
 
+A simple AI chatbot, needs an API key.
 
+## Features
+- Summarization of any length of text
+- Summarize from URL
+- Index building / memory & query ability of that data
+- System message setting
+- Archive and summarize conversation
+- Conversation Reset
 
 ## Getting started
 
