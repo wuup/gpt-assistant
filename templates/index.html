@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AI Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid chat-container">
+        <div id="chatbox" class="bg-dark p-3 my-3 border">
+        </div>
+        <form id="chat-form" class="d-flex">
+            <div class="input-group">
+                <div class="input-group-text">
+                    <label for="action-selector"></label>
+                    <select name="action" id="action-selector" class="form-select">
+                        <option value="general">Chat</option>
+                        <option value="query">Query</option>
+                        <option value="summarize">Summarize</option>
+                        <option value="url">URL</option>
+                    </select>
+                </div>
+                <input id="user-input" type="text" class="form-control" placeholder="Type your message...">
+            </div>
+            <!-- <button id="start-speech-recognition" class="btn btn-secondary ms-2" type="button">Start Speech
+                Recognition</button> -->
+            <button class="btn btn-primary ms-2" type="submit">Send</button>
+        </form>
+
+        <div class="command-buttons mt-2">
+            <button class="btn btn-outline-secondary" onclick="sendCommand('archive')">Archive</button>
+            <button class="btn btn-outline-secondary" onclick="sendCommand('reset')">Reset</button>
+            <button class="btn btn-outline-secondary" onclick="openSystemModal()">System Message</button>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="systemModal" tabindex="-1" aria-labelledby="systemModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="systemModalLabel">Edit System Content</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <textarea id="system-content-input" class="form-control" rows="10" style="resize: vertical; overflow-y: auto;"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="saveSystemContent()">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/scripts.js"></script>
+</body>
+
+</html>

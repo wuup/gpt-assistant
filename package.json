@@ -1,0 +1,15 @@
+{
+  "name": "electron-gpt",
+  "version": "1.0.0",
+  "description": "personal assistant",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Alan Hamlyn",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^24.1.2"
+  }
+}
+
