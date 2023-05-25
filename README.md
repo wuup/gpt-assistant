@@ -5,10 +5,11 @@ A simple AI chatbot, needs an API key.
 ## Features
 - Summarization of any length of text
 - Summarize from URL
-- Index building / memory & query ability of that data
+- Long-term memory - Index building / memory & query ability of that data
 - System message setting
 - Archive and summarize conversation
 - Conversation Reset
+- Automatically generate obsidian compartible nodes, open 'notes' directory as a vault
 
 ## Getting started
 
