@@ -3,6 +3,7 @@
 A simple AI chatbot, needs an API key.
 
 ## Features
+
 - Summarization of any length of text
 - Summarize from URL
 - Index building / memory & query ability of that data
@@ -13,6 +14,16 @@ A simple AI chatbot, needs an API key.
 ## Getting started
 
 Install the requirements.txt
+`pip install -r requirements.txt`
+
+## Add API key
+
+1. Visit https://platform.openai.com/account/api-keys to create or retrieve your API key
+2. Create a `.env` file with `OPENAI_API_KEY=<API_KEY>`
+
+## Run the app
+
+`flask run`
 
 ## Screenshot
 

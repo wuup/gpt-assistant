@@ -6,6 +6,7 @@ import requests
 import hashlib
 from prompt_wizard import Prompt, Snippet, do_request, Config
 import spacy
+from typing import Tuple
 
 OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
 
@@ -136,7 +137,7 @@ def url_to_filename(url):
     return hashlib.md5(new_string.encode()).hexdigest()+".md"
 
 
-def handle_url(url: str) -> (str, str):
+def handle_url(url: str) -> Tuple[str, str]:
     from bs4 import BeautifulSoup
 
     # get url contents
