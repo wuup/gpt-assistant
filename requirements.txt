@@ -80,3 +80,4 @@ urllib3==1.26.15
 wasabi==1.1.1
 Werkzeug==2.3.3
 yarl==1.9.2
+python-dotenv==1.0.0
