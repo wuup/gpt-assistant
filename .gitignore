@@ -1,0 +1,4 @@
+.env
+.python-version
+__pycache__
+settings.json
